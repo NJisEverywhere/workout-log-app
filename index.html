@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>筋トレメモtimer</title>
+    <title>筋トレメモ</title>
   </head>
   <body>
     <h1 id="time">00:10</h1>
+
+    <input type="number" id="set-seconds" placeholder="秒数入力" />
+    <button id="set">Set</button>
+
     <button id="start">Start</button>
     <button id="reset">Reset</button>
+
+    <hr />
+    <hr />
+    <h2>筋トレ記録</h2>
+
+    <input type="text" id="ex" placeholder="種目" />
+    <input type="number" id="weight" placeholder="重量(kg)" />
+    <input type="number" id="reps" placeholder="回数" />
+    <input type="number" id="sets" placeholder="セット数" />
+    <button id="add">追加</button>
+
+    <ul id="log"></ul>
 
     <script src="main.js"></script>
   </body>
